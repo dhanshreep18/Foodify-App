@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity"
+    android:background="@color/colorPrimary">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar"
+        android:background="#ffffff"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:hint="Name (Min.3 characters)"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:background="#ffffff"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:hint="Email Address"/>
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:background="#ffffff"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:hint="Mobile Number (10 digits)"/>
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMobileNumber"
+        android:background="#ffffff"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:hint="Delivery Address"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAddress"
+        android:background="#ffffff"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:hint="Password (Min. 4 characters)"/>
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:background="#ffffff"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etConfirmPassword"
+        android:background="@color/buttonColor"
+        android:layout_margin="15dp"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+
+
+</RelativeLayout>

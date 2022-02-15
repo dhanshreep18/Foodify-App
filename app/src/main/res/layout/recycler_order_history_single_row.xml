@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.60">
+
+            <TextView
+                android:id="@+id/txtViewOrderRestaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restaurant Name"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:padding="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40">
+
+            <TextView
+                android:id="@+id/txtViewOrderDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="dd/mm/yy"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOrderHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.895"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#909090"/>
+
+
+</LinearLayout>

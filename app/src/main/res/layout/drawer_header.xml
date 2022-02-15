@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/foodify_logo"
+        />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/txtMobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_mobile_number"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

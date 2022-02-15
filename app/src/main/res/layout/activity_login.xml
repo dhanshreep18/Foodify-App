@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imgFoodifyLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/foodify_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="Enter Mobile Number"
+        android:layout_below="@id/imgFoodifyLogo"
+        android:layout_margin="15dp"
+        android:inputType="phone"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@id/etMobileNumber"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="@color/buttonColor"/>
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:text="Forgot Password"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Don't have an account? Sign up now"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
